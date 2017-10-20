@@ -16,5 +16,10 @@ app.use(bodyParser.json());
 
 
 //the routes for the server
-require(".app/routing/apiRoutes")(app);
-require(".app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
+
+//The listener. Starts the server. 
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
+});
