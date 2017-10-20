@@ -13,13 +13,6 @@ module.exports = function(app) {
 
 	//API POST request. 
 	app.post("/api/friends", function(req, res) {
-		
+		friends.push(req.body);
 	})
-
-
-
-
-
-
-
-}
+};
